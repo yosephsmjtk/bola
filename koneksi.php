@@ -11,7 +11,7 @@ $koneksi = mysqli_connect($host,$dbuser,$dbpassword,$dbname);
         echo "</script>";
         die;
     }else{
-        $select = mysqli_select_db($koneksi, "gofutsal");
+        $select = mysqli_select_db($koneksi, "bookingbola");
         //echo "Sukses";
     }
 ?>
