@@ -1,5 +1,10 @@
 <?php
-$koneksi = mysqli_connect("localhost", "root","");
+$host = 'db4free.net:3306'; 
+$dbuser = "yosepsmjtk";
+$dbpassword = "fe6dda13";
+$dbname = "bookingbola";
+
+$koneksi = mysqli_connect($host,$dbuser,$dbpassword,$dbname);
     if(!($koneksi)){
         echo "<script language=\"javascript\">\n";
         echo "alert(\"Tidak bisa terkoneksi dengan database...\");\n";
